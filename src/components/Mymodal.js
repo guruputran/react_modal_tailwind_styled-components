@@ -19,8 +19,8 @@ const ModalWrapper = styled.div`
   width: 800px;
   height: 500px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
-  background: #fff;
-  color: #000;
+  background: #00a1b1;
+  color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
@@ -102,7 +102,7 @@ export const Mymodal = ({ showModal, setShowModal }) => {
             <ModalWrapper showModal={showModal}>
               <ModalImg src={require("./modal.jpg")} alt="camera" />
               <ModalContent>
-                <h1>Are you ready?</h1>
+                <h1 className="text-yellow-300">Are you ready?</h1>
                 <p>Get exclusive access to our next launch.</p>
                 <button>Join Now</button>
               </ModalContent>
